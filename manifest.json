@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "CatNote",
+    "version": "1.0",
+    "description": "CatNote is a user-friendly and minimalist note-taking Chrome extension that requires no login. Enjoy a seamless experience with features like easy note creation, sorting, and filtering, all in a delightful, minimal interface. Simplify your note management with CatNote, where simplicity meets functionality.",
+    "icons": {
+      "128": "./resources/icon128.png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "128": "./resources/icon128.png"
+      }
+    },
+    "permissions": [
+      "storage",
+      "activeTab"
+    ],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; style-src 'self' https://cdn.jsdelivr.net/ https://fonts.googleapis.com/; object-src 'self'"
+    }        
+  }
+  
