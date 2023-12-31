@@ -13,8 +13,7 @@
       }
     },
     "permissions": [
-      "storage",
-      "activeTab"
+      "storage"
     ],
     "content_security_policy": {
       "extension_pages": "script-src 'self'; style-src 'self' https://cdn.jsdelivr.net/ https://fonts.googleapis.com/; object-src 'self'"
