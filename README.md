@@ -16,7 +16,7 @@ CatNote prioritizes the security of your data. All notes are securely saved in t
 ## Getting Started
 
 1. **Installation:**
-   - [Download CatNote](https://chromewebstore.google.com/search/CatNote) from the Chrome Web Store.
+   - [Download CatNote](https://chrome.google.com/webstore/detail/acdggeipfifogjpidepmofmpkifhgfef) from the Chrome Web Store.
 
 2. **Usage:**
    - Open CatNote in your Chrome browser.
