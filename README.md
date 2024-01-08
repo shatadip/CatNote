@@ -28,7 +28,8 @@ We welcome your feedback and contributions to enhance CatNote further. Feel free
 
 ## Author
 
-CatNote is developed by [Shatadip Majumder](https://www.shatadip.com).
+- **Author**: [Shatadip Majumder](https://www.shatadip.com)
+- **GitHub**: [Shatadip's GitHub Profile](https://github.com/shatadip)
 
 ## License
 
