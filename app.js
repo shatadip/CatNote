@@ -289,6 +289,12 @@ function toggleCompleted(noteId, completed) {
     };
 }
 
+// Function to view note in modal window
+
+function toggleFavorite(noteText){
+    alert(noteText);
+}
+
 // Function to toggle favorite status
 function toggleFavorite(noteId) {
     const transaction = db.transaction(['notes'], 'readwrite');
@@ -496,6 +502,7 @@ function displayFilteredNotes(filteredNotes) {
             noteTextElement.classList.add('completed');
         }
 
+        const viewNoteButton = createButtonWithTooltip('<i class="bi bi-play"></i>', 'btn-info', 'ml-2', 'View Note', () => viewNote(note.text));
         const copyButton = createButtonWithTooltip('<i class="bi bi-clipboard"></i>', 'btn-info', 'ml-2', 'Copy', () => copyToClipboard(note.text));
         const deleteButton = createButtonWithTooltip('<i class="bi bi-trash"></i>', 'btn-danger', 'ml-2', 'Delete', () => deleteNote(note.id));
         const favoriteButton = createButtonWithTooltip(`<i class="bi ${note.favorite ? 'bi-star-fill btn-favorite' : 'bi-star'}"></i>`, 'btn-secondary', 'ml-2', note.favorite ? 'Unstar' : 'Star', () => toggleFavorite(note.id));
@@ -503,6 +510,7 @@ function displayFilteredNotes(filteredNotes) {
         noteElement.appendChild(handle);
         noteElement.appendChild(checkbox);
         noteElement.appendChild(noteTextElement);
+        noteElement.appendChild(viewNoteButton);
         noteElement.appendChild(copyButton);
         noteElement.appendChild(favoriteButton);
         noteElement.appendChild(deleteButton);
