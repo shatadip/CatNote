@@ -169,11 +169,13 @@ function displayNotes() {
             noteTextElement.classList.add('completed');
         }
 
+        const viewNoteButton = createButtonWithTooltip('<i class="bi bi-play"></i>', 'btn-info', 'ml-2', 'View Note', () => viewNote(note.text));
         const copyButton = createButtonWithTooltip('<i class="bi bi-clipboard"></i>', 'btn-info', 'ml-2', 'Copy', () => copyToClipboard(note.text));
         const deleteButton = createButtonWithTooltip('<i class="bi bi-trash"></i>', 'btn-danger', 'ml-2', 'Delete', () => deleteNote(note.id));
         const favoriteButton = createButtonWithTooltip(`<i class="bi ${note.favorite ? 'bi-star-fill btn-favorite' : 'bi-star'}"></i>`, 'btn-secondary', 'ml-2', note.favorite ? 'Unstar' : 'Star', () => toggleFavorite(note.id));
 
         buttonsContainer.appendChild(checkbox);
+        buttonsContainer.appendChild(viewNoteButton);
         buttonsContainer.appendChild(copyButton);
         buttonsContainer.appendChild(favoriteButton);
         buttonsContainer.appendChild(deleteButton);
